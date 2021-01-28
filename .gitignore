@@ -1,6 +1,8 @@
 .idea/
-node_modules/
-.vs/
-.code/
-code/
-package-lock.json
+server/.env
+server/node_modules/
+server/.idea/
+server/.code/
+client/node_modules/
+client/.idea/
+client/.code/
