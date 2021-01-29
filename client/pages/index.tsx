@@ -1,9 +1,14 @@
 import React from 'react'
-import Layout from "../components/Layout/LayoutComponent";
+import { Section, Box, Text } from "../components";
 
 const HomePage = () => {
     return (
-        <Layout>Initial</Layout>
+        <Section>
+            <Box half>
+                <Text>Designium</Text>
+            </Box>
+            <Box half>test</Box>
+        </Section>
     )
 }
 

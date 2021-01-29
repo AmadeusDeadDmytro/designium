@@ -1,5 +1,6 @@
 import {ReactNode} from "react";
 
-export interface LayoutPropsType {
+export interface BoxPropsType {
 	children: ReactNode
+	half?: boolean
 }

@@ -1,6 +1,8 @@
 import Document, {Html, Head, Main, NextScript} from "next/document";
 // Import styled components ServerStyleSheet
-import { ServerStyleSheet } from 'styled-components';
+import {createGlobalStyle, ServerStyleSheet} from 'styled-components';
+import {APP_NAME} from "../config";
+
 
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx) {
@@ -29,11 +31,12 @@ export default class MyDocument extends Document {
 		}
 	}
 
+
 	render () {
 		return (
 			<Html lang={'en'}>
 				<Head>
-					<title>Designium</title>
+					<title>{APP_NAME}</title>
 					<meta charSet={'UTF-8'} />
 					<meta name={'viewport'} content={'width=device-width, initial-scale=1.0'} />
 				</Head>
