@@ -5,10 +5,10 @@ export default createGlobalStyle`
       margin: 0;
       padding: 0;
 	  overflow: hidden;
-      font-family: 'Roboto Mono', monospace;
+      font-family: 'Roboto Mono', monospace !important; 
     }
 	
-	*{
+	* {
 	  z-index: 2;
 	  margin: 0;
 	  padding: 0;
