@@ -5,5 +5,14 @@ export default createGlobalStyle`
       margin: 0;
       padding: 0;
 	  overflow: hidden;
+      font-family: 'Roboto Mono', monospace;
     }
+	
+	*{
+	  z-index: 2;
+	  margin: 0;
+	  padding: 0;
+	}
+	
+	
 `

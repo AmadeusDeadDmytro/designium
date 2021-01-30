@@ -1,6 +1,6 @@
 import Document, {Html, Head, Main, NextScript} from "next/document";
 // Import styled components ServerStyleSheet
-import {createGlobalStyle, ServerStyleSheet} from 'styled-components';
+import {ServerStyleSheet} from 'styled-components';
 import {APP_NAME} from "../config";
 
 
@@ -37,8 +37,8 @@ export default class MyDocument extends Document {
 			<Html lang={'en'}>
 				<Head>
 					<title>{APP_NAME}</title>
-					<meta charSet={'UTF-8'} />
-					<meta name={'viewport'} content={'width=device-width, initial-scale=1.0'} />
+					<link rel="preconnect" href="https://fonts.gstatic.com" />
+					<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 				</Head>
 				<body>
 					<Main />
