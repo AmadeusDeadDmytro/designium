@@ -2,7 +2,7 @@ import React from 'react';
 import App from 'next/app';
 import GlobalStyles from '../styles/globalStyles'
 
-import '../styles/antd.less'
+import 'antd/dist/antd.css';
 
 class MyApp extends App {
 	render() {

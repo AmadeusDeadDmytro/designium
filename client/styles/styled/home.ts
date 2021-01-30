@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Row, Typography } from 'antd';
-import Colors from './colors'
+import Colors from '../colors'
 
 export const StyledRow = styled(Row)`
 	background-color: ${Colors.DARK_TWO};
@@ -21,9 +21,11 @@ export const StyledRow = styled(Row)`
 `
 
 export const StyledTitle = styled(Typography.Title)`
-	color: ${Colors.LIGHT_ONE} !important;
+	color: ${Colors.LIGHT_TWO} !important;
+    user-select: none;
 `
 
 export const StyledText = styled(Typography.Text)`
   color: ${Colors.LIGHT_THREE} !important;
+  user-select: none;
 `
