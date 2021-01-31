@@ -1,6 +1,8 @@
 import React from 'react'
 import { Col, Space } from 'antd';
-import { StyledRow, StyledTitle, StyledText } from '../styles/styled/home'
+import { StyledRow } from '../styles/styled/home'
+import { StyledTitle, StyledText } from '../styles/styled/common'
+import SignInModule from '../modules/SignIn/SignInModule'
 
 const SignIn = () => {
 	return (
@@ -11,8 +13,8 @@ const SignIn = () => {
 					<StyledText>New way for creating game design</StyledText>
 				</Space>
 			</Col>
-			<Col span={12}>
-
+			<Col span={4} offset={4}>
+				<SignInModule />
 			</Col>
 		</StyledRow>
 	)

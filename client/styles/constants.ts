@@ -1,0 +1,1 @@
+export const transition = 'transition: all linear 0.25s'

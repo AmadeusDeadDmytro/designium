@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Row, Typography } from 'antd';
+import { Row } from 'antd';
 import Colors from '../colors'
 
 export const StyledRow = styled(Row)`
@@ -18,14 +18,4 @@ export const StyledRow = styled(Row)`
 		transform: rotate(45deg);
 		background-color: ${Colors.DARK_ONE};
 	}
-`
-
-export const StyledTitle = styled(Typography.Title)`
-	color: ${Colors.LIGHT_TWO} !important;
-    user-select: none;
-`
-
-export const StyledText = styled(Typography.Text)`
-  color: ${Colors.LIGHT_THREE} !important;
-  user-select: none;
 `
