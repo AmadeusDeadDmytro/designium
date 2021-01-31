@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormGroupProps, InputComponentProps } from './inputComponentTypes'
+import { FormGroupProps, InputComponentProps } from './textfieldComponentTypes'
 import styled from 'styled-components'
 import Colors from '../../styles/colors'
 import { transition } from '../../styles/constants'

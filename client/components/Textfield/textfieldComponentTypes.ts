@@ -1,5 +1,7 @@
+type Types = 'text' | 'password' | 'email'
+
 export interface InputComponentProps {
-    type: string
+    type: Types
     placeholder?: string
 }
 
