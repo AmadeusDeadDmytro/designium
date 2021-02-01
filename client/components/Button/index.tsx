@@ -1,8 +1,8 @@
 import React from 'react'
-import { ButtonProps, ButtonWrapperProps } from './buttonComponentTypes'
+import { ButtonProps, ButtonWrapperProps } from './types'
 import styled from 'styled-components'
 import Colors from '../../styles/colors'
-import Link from 'next/link'
+import Link from "next/link"
 import { transition } from '../../styles/constants'
 
 const Button = ({ children, full, href, center }: ButtonProps ) => {
@@ -28,7 +28,7 @@ const StyledWrapper = styled.div<ButtonWrapperProps>`
     display: inline-flex;
     color: ${Colors.LIGHT_TWO};
     border: 1px solid ${Colors.LIGHT_TWO};
-    padding: 3px 10px;
+    padding: 5px 20px;
     border-radius: 6px;
     cursor: pointer;
     appearance: none;
@@ -40,6 +40,7 @@ const StyledWrapper = styled.div<ButtonWrapperProps>`
     white-space: nowrap;
     vertical-align: middle;
     outline: none;
+    font-size: 1rem;
     width: ${({ isFullWidth }) => isFullWidth ? '100%' : 'auto'};
     
     &:hover {

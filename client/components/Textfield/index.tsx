@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormGroupProps, InputComponentProps } from './textfieldComponentTypes'
+import { FormGroupProps, InputComponentProps } from './types'
 import styled from 'styled-components'
 import Colors from '../../styles/colors'
 import { transition } from '../../styles/constants'
@@ -21,7 +21,7 @@ const FormGroup = styled.div<FormGroupProps>`
         width: 100%;
         outline: none;
         border: 1px solid ${Colors.LIGHT_TWO};
-        padding: 5px 10px;
+        padding: 8px 10px;
         color: ${Colors.LIGHT_TWO};
         border-radius: 6px;
         box-shadow: 0 0 11px 2px transparent;

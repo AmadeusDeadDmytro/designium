@@ -1,4 +1,5 @@
-import Button from './Button/buttonComponent'
-import Textfield from './Textfield/textfieldComponent'
+import Button from './Button'
+import Textfield from './Textfield'
+import Checkbox from './Checkbox'
 
-export { Button, Textfield }
+export { Button, Textfield, Checkbox }

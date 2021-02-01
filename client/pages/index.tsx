@@ -2,7 +2,8 @@ import React from 'react'
 import { Col, Space } from 'antd';
 import { Button } from '../components'
 import { StyledRow } from '../styles/styled/home'
-import { StyledTitle, StyledText } from '../styles/styled/common'
+import styled from 'styled-components'
+import { textColor } from '../styles/constants'
 
 const HomePage = () => {
     return (
@@ -17,5 +18,16 @@ const HomePage = () => {
         </StyledRow>
     )
 }
+
+const StyledText = styled.div`
+  ${textColor};
+  user-select: none;
+`
+
+const StyledTitle = styled.h1`
+  ${textColor};
+  user-select: none;
+`
+
 
 export default HomePage
