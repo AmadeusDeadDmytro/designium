@@ -5,7 +5,7 @@ import Colors from '../../styles/colors'
 import Link from "next/link"
 import { transition } from '../../styles/constants'
 
-const Button = ({ children, full, href, center }: ButtonProps ) => {
+const Button = ({ children, full, href, center, onClick }: ButtonProps ) => {
     if(href) {
         return (
             <Link href={href}>
@@ -17,7 +17,7 @@ const Button = ({ children, full, href, center }: ButtonProps ) => {
     }
 
     return (
-        <StyledWrapper isFullWidth={full} center={center}>
+        <StyledWrapper isFullWidth={full} center={center} onClick={onClick}>
             {children}
         </StyledWrapper>
     )

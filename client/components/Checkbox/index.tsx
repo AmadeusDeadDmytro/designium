@@ -5,13 +5,15 @@ import Colors from '../../styles/colors'
 import { Space } from 'antd'
 import styled from 'styled-components'
 
-const Checkbox = ({ label, checked }: CheckboxProps) => {
+const Checkbox = ({ label, checked, onChange, id }: CheckboxProps) => {
 
     return (
-        <StyledSpace direction={'horizontal'} size={10} align={'center'}>
-            {checked ? <RiCheckboxLine color={Colors.LIGHT_TWO} size={20} display={'flex'}/> : <RiCheckboxBlankLine color={Colors.LIGHT_TWO} size={20} display={'flex'}/>}
-            <Label>{label}</Label>
-        </StyledSpace>
+        <StyledDiv onClick={() => onChange(!checked, id)}>
+            <Space direction={'horizontal'} size={10} align={'center'}>
+                {checked ? <RiCheckboxLine color={Colors.LIGHT_TWO} size={20} display={'flex'}/> : <RiCheckboxBlankLine color={Colors.LIGHT_TWO} size={20} display={'flex'}/>}
+                <Label>{label}</Label>
+            </Space>
+        </StyledDiv>
     )
 }
 
@@ -20,7 +22,7 @@ const Label = styled.p`
     user-select: none;
 `
 
-const StyledSpace = styled(Space)`
+const StyledDiv = styled.div`
     cursor: pointer;
 `
 

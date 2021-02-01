@@ -4,6 +4,7 @@ import { StyledRow } from '../styles/styled/home'
 import { SignUpModule } from '../modules'
 import styled from 'styled-components'
 import { textColor } from '../styles/constants'
+import { motion } from 'framer-motion'
 
 const SignUp = () => {
 	return (
@@ -15,7 +16,9 @@ const SignUp = () => {
 				</Space>
 			</Col>
 			<Col span={4} offset={4}>
-				<SignUpModule />
+				<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} layoutId={'form'} >
+					<SignUpModule />
+				</motion.div>
 			</Col>
 		</StyledRow>
 	)

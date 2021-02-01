@@ -1,6 +1,7 @@
 import React from 'react';
 import App from 'next/app';
 import GlobalStyles from '../styles/globalStyles'
+import { AnimateSharedLayout } from 'framer-motion'
 
 import 'antd/dist/antd.css';
 
@@ -9,10 +10,10 @@ class MyApp extends App {
 		const { Component, pageProps } = this.props;
 
 		return (
-			<React.Fragment>
+			<AnimateSharedLayout>
 				<GlobalStyles />
 				<Component {...pageProps} />
-			</React.Fragment>
+			</AnimateSharedLayout>
 		);
 	}
 }

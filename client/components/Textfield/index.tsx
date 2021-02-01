@@ -4,10 +4,10 @@ import styled from 'styled-components'
 import Colors from '../../styles/colors'
 import { transition } from '../../styles/constants'
 
-const Input = ({ type, placeholder }: InputComponentProps) => {
+const Input = ({ type, placeholder, onChange, id, value }: InputComponentProps) => {
     return (
         <FormGroup>
-            <input type={type} placeholder={placeholder}/>
+            <input type={type} placeholder={placeholder} onChange={(e) => onChange(e.target.value, id)} value={value}/>
         </FormGroup>
     )
 }
