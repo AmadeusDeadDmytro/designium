@@ -6,9 +6,11 @@ export interface ButtonProps {
     href?: string
     center?: boolean
     onClick?: () => void
+    loading?: boolean
 }
 
 export interface ButtonWrapperProps {
     isFullWidth: boolean
     center: boolean
+    loading: boolean
 }
